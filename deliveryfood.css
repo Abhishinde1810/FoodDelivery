@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --navbar-height:60px;
+}
+/* Navigation bar */
+
+
+/* Image */
+#logo{
+    margin: 10px 34px;
+    
+   
+}
+#logo img{
+    height: 60px;
+    margin: 3px 6px;
+    border-radius: 100%;
+}
+
+/* navigation bar listing */
+#navbar{
+    display: flex;
+    position: relative;
+    align-items: center;
+    top: 0px;
+   
+}
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: " ";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color:white;
+    display: block;
+    padding: 3px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 645px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url("bg.jpg") no-repeat center/cover;
+    height: 100%;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+
+#home p{
+    color: black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: cursive;
+}
+/* utility  */
+
+.prime{
+    font-size: 3.8rem;
+    padding: 12px;
+    text-align: center;
+}
+
+.second{
+    font-size: 2.3rem;
+    padding: 12px;
+    text-align: center;
+}
+
+.btn{
+   
+    padding: 6px 20px;
+    border: 2px solid rgb(122, 55, 7);
+    background-color: white;
+    border-radius: 14px;
+    margin: 17px;
+    font-size: 1.5rem;
+font-weight: 600;
+cursor: pointer;
+}
+
+.btn:hover{
+    background-color: antiquewhite;
+
+}
+.center{
+    text-align: center;
+}
+
+/* Services */
+
+#services{
+    display: flex;
+   margin-top: 12px;
+   margin-bottom: 28px;
+}
+
+
+
+#services .box{
+    border: 3px solid brown;
+    height: 420px;
+   padding: 30px;
+   margin: 3px 10px;
+   border-radius: 100%;
+   background-color: rgb(248, 245, 241);
+}
+
+#services .box img{
+    padding: 4px;
+    height: 200px;
+    width: 220px;
+    display: block;
+    margin: auto;
+
+}
+
+#services .box p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Contact  */
+
+#contact{
+    
+    position: relative;
+}
+
+#contact::before{
+content: "";
+position: absolute;
+width: 100%;
+height: 100%;
+z-index: -1;
+opacity: 0.7;
+background: url("contact.jpg") no-repeat center center/cover ;
+}
+
+#contactbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 30px;
+}
+#contactbox input,
+#contactbox textarea{
+width: 100%;
+padding: 0.5rem;
+font-size: 1.1rem;
+}
+
+#contactbox form{
+    width: 40%;
+}
+
+#contactbox label{
+   font-size: 1.3rem;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* footer */
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 12px;
+
+}
